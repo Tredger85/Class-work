@@ -1,15 +1,11 @@
-function reverse (word){
-    var result = []
-    var counter = 1;
-    while(counter < word.length) {
-        result.concat(word[word.length-counter]);
-        counter++;
-    }
-    Console.info(result);
+function sum(num1, num2){
+	var result=num1+num2;
+	return result;
 }
 
-reverse("Hello");
+DISCOUNT_PERCENTAGE=.2;
 
-var reverse = ["one", "two", "three", "four"];
-
-reverse(reverse);
+function getRegularPrice(){
+	var price=parseFloat(prompt("Enter the price"));
+	return price;
+}

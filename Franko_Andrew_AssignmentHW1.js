@@ -1,0 +1,8 @@
+document.write("<title>Andrew Franko</title>")
+document.write("<body>")
+document.write("<h1>Andrew Franko</h1>")
+document.write("<h1>2501 148th Ave SE</h1>")
+document.write("<h1>Bellevue, WA 98007</h1>")
+document.write("<h1>703-244-7599</h1>")
+document.write("<h1>B.A.S. Computing & Software Dev</h1>")
+document.write("</body>")
