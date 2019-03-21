@@ -1,0 +1,26 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<script src="setGrade.js"></script>
+	</head>
+	<body>
+        <p>A table of students and their current grades</p>
+        <script>
+            createTable();
+        </script>
+        <form name="form" id="form" method="post">
+            <p>Enter the Student ID and updated letter grade below to make a correction</p>
+            <label for="textBox">Student ID:</label>
+            <input id="student_id" name="student_id" type="text" size="5" />
+            <p id="idError"></p><br/>
+            <label for="textBox">New Letter Grade:</label>
+            <input id="grade" name="grade" type="text" size="5" />
+            <p id="gradeError"></p><br/>
+            <input id="button" type="button" id="button2" value="Update" onclick="setGrade()"/>
+            <input type="reset" value="Clear Form" /><br/>
+        </form>
+	</body>
+</html>
+

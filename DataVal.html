@@ -1,0 +1,30 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<script src="hangman.js"></script>
+	</head>
+	<body>
+        <p>We are going to enter a series of numbers, but make sure you follow the rules</p>
+		<form name="form" id="form" method="post">
+			<label for="textBox">Enter your name or initials(more than two letters):</label><br/>
+			<input id="name" name="name" type="text" size="45" /><br/>
+			<label for="textBox">Enter a number whole number from 1 to 100:</label><br/>
+            <input id="num1" name="num1" type="number" size="45" /><p id="num1output"></p><br/>
+            <label for="textBox">Enter a number whole number from 50 to 150:</label><br/>
+            <input id="num2" name="num2" type="number" size="45" /><p id="num2output"></p><br/>
+            <label for="textBox">Enter a negative number:</label><br/>
+            <input id="num3" name="num3" type="number" size="45" /><p id="num3output"></p><br/>
+            <label for="textBox">Enter any number:</label><br/>
+            <input id="num4" name="num4" type="number" size="45" /><p id="num4output"></p><br/>
+            <label for="textBox">Enter any number:</label><br/>
+            <input id="num5" name="num5" type="number" size="45" /><p id="num5output"></p><br/>
+			<label>Result: </label><br/>
+			<p id="output"></p>
+			<input id="button" type="button" id="button2" value="Calculate" onclick="dataVal()"/>
+			<input type="reset" value="Clear Form" /><br/>
+		</form>
+	</body>
+</html>
+

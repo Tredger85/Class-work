@@ -1,0 +1,24 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<script src="balance.js"></script>
+	</head>
+	<body>
+        <form name="form" id="form" method="post">
+            <p>A calculation of minimum payment, based on balance and annual interest rate, to clear the balance in a year</p>
+            <label for="textBox">Enter the current balance:</label>
+            <input id="balance" name="balance" type="number" size="9" />
+            <p id="balanceError"></p><br/>
+            <label for="textBox">Enter the annual interest rate as a decimal:</label>
+            <input id="rate" name="rate" type="number" size="5" />
+            <p id="rateError"></p><br/>
+            <input id="button" type="button" id="button" onclick="minPayment()" value="Calculate" />
+            <input type="reset" value="Clear Form" /><br/><br/>
+            <label for="textBox">Lowest Payment:</label>
+            <p id="minPayment"></p>
+        </form>
+	</body>
+</html>
+

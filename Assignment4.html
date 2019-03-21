@@ -1,0 +1,21 @@
+<!--DOCTYPE html-->
+<!--Andrew Franko-->
+<html>
+<body>
+    <button id="btn" onclick="displayFood()">Show Food</button>
+    <script>
+        //Produces a number of lines that discribe what foods I like
+        function displayFood() {
+            document.getElementById("btn").style.backgroundColor = "#FFFFFF";
+			var text="";
+            var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
+            //Steps through the food array and then adds the new lines to the running string of text
+            for(let i = 0; i < food.length;i++) {
+				text = (text+ "I love " + food[i] + "<br/>");
+            }
+			document.getElementById("food").innerHTML = text.fontcolor("green");;
+        }
+    </script>
+	<p id="food"></p>
+</body>
+</html>
