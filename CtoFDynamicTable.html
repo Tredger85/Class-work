@@ -1,0 +1,25 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+	<meta charset="UTF-8" />
+	<title>Centigrade to Fahrenheit Dynamic Table</title>
+
+	</head>
+	<body>
+		<table border="3"><tr><th>Centigrade</th><th>Fahrenheit</th></tr>
+			<script>
+				//Initialized at 0 and end at 20
+				for(var i=0; i<=20; i++){ 
+					//Opening the row
+					document.write("<tr>");
+					//filling the first column of the row with the temperature in Centigrade
+					document.write("<td>"+i+"</td>");
+					//calculating and filling the second column with the converted Fahrenheit
+					document.write("<td>"+(i*9/5+32)+"</td>");
+					//close the row
+					document.write("</tr>");
+				}
+			</script>
+		</table>
+	</body>
+</html> 

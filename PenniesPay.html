@@ -1,0 +1,40 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Pennies for Pay</title>
+
+	</head>
+	<body>
+		<h4>Pennies for Pay</h4>
+		<script>
+			//Input for number of days worked, this is also the upper limit for the for loop
+			var days=parseInt(prompt("Enter number of days"));
+			//cumulative total for amount earned
+			var total=0;
+			//variable for how much is earned per day
+			var dailyTotal=1;
+			//Start the table with headers
+			document.write("<table border=&quot3&quot><tr><th>Day#</th><th>Day Pay</th></tr>");
+			//Initialized at 1 and proceeds until we get to the entered days
+			for(var i=1; i<=days; i++){ 
+				//Opening the row
+				document.write("<tr>");
+				//filling the first column of the row with the day
+				document.write("<td>"+i+"</td>");
+				//calculating and filling the second column with the pay for that day
+				document.write("<td> $"+dailyTotal/100+"</td>");
+				//close the row
+				document.write("</tr>");
+				//adding the days pay to the total
+				total+=dailyTotal;
+				//incrementing the daily pay for the next day
+				dailyTotal*=2;
+			}
+			//Closing out the table
+			document.write("</table>");
+			//Print out the cumulative pay for all days worked
+			document.write("<h4>Total amount is $"+total/100+".</h4>");
+		</script>
+	</body>
+</html> 

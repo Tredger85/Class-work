@@ -1,0 +1,55 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<title>Trapezoidal Volume</title>
+	</head>
+	<body>
+		<script> 
+			//Prompts, takes an input and parses the length
+			var length = parseFloat(prompt("Enter the Length of the Trapezoid:","1")); 
+			//Prompts, takes an input and parses the height
+			var height = parseFloat(prompt("Enter the Height of the Trapezoid:","1")); 
+			//Prompts, takes an input and parses the base width
+			var bWidth = parseFloat(prompt("Enter the Base Width of the Trapezoid:","1")); 
+			//Prompts, takes an input and parses the top width
+			var tWidth = parseFloat(prompt("Enter the Top Width of the Trapezoid:")); 
+			
+			//Calculate the volume
+			var volume = length*height*((bWidth+tWidth)/2);
+			
+			//Prints the Length dimension
+			document.write("<p>Length: " +length+"<br/>");
+			//Prints the Height dimension
+			document.write("Height: " +height+"<br/>");
+			//Prints the Base Width dimension
+			document.write("Base Width: " +bWidth+"<br/>");
+			//Prints the Top Width dimension
+			document.write("Top Width: " +tWidth+"</p>");
+			
+			//Prints the calculated of volume
+			document.write("<p>Total Trapezoidal volume:" +volume+"</p>"); 
+			
+			//Variable to reduce each dimension by
+			var reduce=25;
+			//Possible input to run custom dimension reduction
+			//reduce=parseFloat(prompt("Enter percentage that you would like dimensions to be reduced by:"));
+			//Converting the default/possible custom input into the simple multiplicative 
+			reduceFactor=(100-reduce)/100;
+			
+			//Reduces and prints the reduced Length dimension
+			document.write("<p>Length minus "+reduce+"%: " +length*reduceFactor+"<br/>");
+			//Reduces and prints the reduced Height dimension
+			document.write("Height minus "+reduce+"%: " +height*reduceFactor+"<br/>");
+			//Reduces and prints the reduced Base WIdth dimension
+			document.write("Base Width minus "+reduce+"%: " +bWidth*reduceFactor+"<br/>");
+			//Reduces and prints the reduced Top Width dimension
+			document.write("Top Width minus "+reduce+"%: " +tWidth*reduceFactor+"</p>");
+			
+			//Calculates the volume with a reduction on each dimension and sets the calculation to the reducedVolume variable
+			var reducedVolume=(reduceFactor*length)*(reduceFactor*height)*(((reduceFactor*bWidth)+(reduceFactor*tWidth))/2);
+			
+			//Prints the reduced dimension volume value
+			document.write("<p>This is the total volume if each dimension was reduced by "+reduce+"%: " +reducedVolume+"</p>");
+		</script>
+	</body>
+</html>

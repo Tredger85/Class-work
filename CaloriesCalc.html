@@ -1,0 +1,27 @@
+<!--Andrew Franko-->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Calories for Fat and Carbs</title>
+	<script src="CaloriesCalc.js"></script>
+</head>
+	<body>
+		<h3>Click Refresh (or Reload) to run the script again</h3><br />
+		<form name="form" id="form" method="post">
+			<label for="textBox">Enter number of grams of fat here  :</label>
+			<input id="fat" name="fat" type="int" size="10" /><br/>
+			<label for="textBox">Enter number of grams of carbs here:</label>
+			<input id="carbs" name="carbs" type="int" size="10" /><br/>
+			<label for="fromFat">Calories from fat  :</label>
+			<input id="fromFat" name="fromFat" type="text" size="10" readonly="readonly" /><br/>
+			<label for="fromCarbs">Calories from carbs:</label>
+			<input id="fromCarbs" name="fromCarbs" type="text" size="10" readonly="readonly" /><br/>
+			<input "button" type="button" id="button" value="Calculate" onclick="getFatCalories(), getCarbCalories()"/>
+			<input type="reset" value="Clear Form" /><br/>
+		</form>
+	</body>
+</html> 
+
+
+
+

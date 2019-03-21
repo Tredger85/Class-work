@@ -1,0 +1,22 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<title>BMI Calculator</title>
+		<!-- added tying the JavaScript file-->
+		<script src="BMI_form.js"></script>
+	</head>
+	<body>
+		<h3>BMI Calculator </h3>
+		<form name="BMIform" id="BMIform">
+			<label for="height">Height in inches: </label> <input id="height" name="height" type="text" size="10" />
+			<br /><br />
+			<label for="weight">Weight in pounds:</label> <input id="weight" name="weight" type="text" size="10"  />
+			<br /><br />
+			<label for="bmi">BMI:</label> <input id="bmi" name="bmi" type="text" size="10" readonly="readonly"/>
+			<br /><br />
+			<!--added the onclick to the JS function-->
+			<input type = "button" id="button1" value="Calculate BMI" onclick="BMI_form()"/>
+			<input type = "reset" value="Clear" />
+		</form>
+	</body>
+</html>

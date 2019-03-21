@@ -1,0 +1,25 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Software Discount and Total</title>
+		<script src="softwareDiscount.js"></script>
+	</head>
+	<body>
+		<h3>Click Refresh (or Reload) to run the script again</h3><br />
+		<form name="form" id="form" method="post">
+			<label for="textBox">Enter number packages purchased to determine the discount and total:</label>
+			<input id="packages" name="packages" type="int" size="10" /><br/>
+			<label for="discount">Discount:</label>
+			<input id="discount" name="discount" type="text" size="25" readonly="readonly" /><br/>
+			<label for="total">Total after Discount:$</label>
+			<input id="total" name="total" type="text" size="10" readonly="readonly" /><br/>
+			<input "button" type="button" id="button" value="Calculate" onclick="discountTotal()"/>
+			<input type="reset" value="Clear Form" /><br/>
+		</form>
+	</body>
+</html> 
+
+
+
+

@@ -1,0 +1,31 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Rectangles HTML Page</title>
+		<!--tied in the JS file-->
+		<script src="rectangles.js"></script>
+	</head>
+	<body>
+		<h3>Click Refresh Form(or Reload) to run the script again</h3><br />
+		<!--form for input of rectangle dimensions and a onclick button--> 
+		<form name="form" id="form" method="post">
+			<label for="textBox">Enter height of rectangle one here:</label>
+			<input id="height1" name="height1" type="int" size="10" /><br/>
+			<label for="textBox">Enter width of rectangle one here :</label>
+			<input id="width1" name="width1" type="int" size="10" /><br/><br/>
+			<label for="textBox">Enter height of rectangle two here:</label>
+			<input id="height2" name="height2" type="int" size="10" /><br/>
+			<label for="textBox">Enter width of rectangle two here :</label>
+			<input id="width2" name="width2" type="int" size="10" /><br/><br/>
+			<label for="output">Evaluation: </label>
+			<input id="output" name="output" type="text" size="50" readonly="readonly" /><br/>
+			<input "button" type="button" id="button2" value="Evaluate" onclick="recEval()"/>
+			<input type="reset" value="Refresh Form" /><br/>
+		</form>
+	</body>
+</html> 
+
+
+
+

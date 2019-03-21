@@ -1,0 +1,19 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Shipping HTML Page</title>
+		<script src="shipCost.js"></script>
+	</head>
+	<body>
+		<h3>Click Refresh (or Reload) to run the script again</h3><br />
+		<form name="form" id="form" method="post">
+			<label for="textBox">Enter the weight of the package to be shipped here :</label>
+			<input id="weight" name="weight" type="int" size="10" /><br/><br/>
+			<label for="output">Cost: $</label>
+			<input id="output" name="output" type="text" size="25" readonly="readonly" /><br/>
+			<input "button" type="button" id="button2" value="Calculate" onclick="shipCost()"/>
+			<input type="reset" value="Refresh Form" /><br/>
+		</form>
+	</body>
+</html> 

@@ -1,0 +1,29 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ocean Levels</title>
+
+	</head>
+	<body>
+	<!--I considered writing a separate function but find it easy enough to see everything here-->
+	<!--I also considered a while loop for fun but there were just many fewer lines of code this way-->
+		<table border="3"><tr><th>Years</th><th>Rise in Water level</th></tr>
+		<script>
+			//For loop, i is both the number of years and the counter. 
+			//How much the water has risen is just a function of years.
+			for(var i=1; i<=25; i++){
+				//I originally had the following as one line of code which is nicely compact but a bit harder to read 
+				//Opening the row
+				document.write("<tr>");
+				//filling the first column of the row with the year/counter
+				document.write("<td>"+i+"</td>");
+				//calculating and filling the second column with total
+				document.write("<td>"+(i*1.5)+" mm</td>");
+				//close the row
+				document.write("</tr>");
+			}
+		</script>
+		</table>
+</body>
+</html> 

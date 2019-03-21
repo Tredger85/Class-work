@@ -1,0 +1,20 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+		<title>Fahrenheit to Celsius Converter</title>
+		<!-- added tying the JavaScript file-->
+		<script src="FC_convert.js"></script>
+	</head>
+	<body>
+		<h3>Fahrenheit to Celsius Converter </h3>
+		<form name="FCform" id="FCform">
+			<label for="fahr">Enter temperature in Fahrenheit:</label>  <input id="fahr" name="fahr" type="text" size="10" />
+			<br /><br />
+			<label for="cel">Temperature in Celcius is:</label> <input id="cel" name="cel" type="text" size="10" readonly="readonly" />
+			<br /><br />
+			<!--added the onclick to the JS function-->
+			<input type = "button" id="button1" value="Calculate Celsius" onclick="FC_form()"/>
+			<input type = "reset" value="Clear" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Variables Examples</title>
+	</head>
+	<body>
+		<script>
+			//amount of money in account
+			var dollars = 2.75;
+			//displays money in account
+			document.write("I have $" + dollars + " in my account.<br />");
+			//change amount of money in account
+			dollars = 99.95;
+			//displays money in account
+			document.write("But now I have $" + dollars + " in my account.");
+			
+			//test score 1
+			var test1 = 88.0;
+			//test score 2
+			var test2 = 92.5;
+			//test score 3
+			var test3 = 97.0;
+			//calculate the average of 3 test scores
+			var average = (test1 + test2 + test3) / 3;
+			
+			//displays average of test scores
+			document.write("Your average test score is " + average);
+
+			//age as entered by user
+			var age = prompt("How old are you?");
+			//parse age into an integer
+			age = parseInt(age);
+			//add 1 to age
+			var ageNextYear = age + 1;
+			//display age next year
+			document.write("<p>Next year you will be " + ageNextYear + "!</p>");
+
+			//a number entered in by the user
+			var num1 = prompt("Please enter in number 1");
+			//parsing input from user into a float
+			num1 = parseFloat(num1);
+			//second number entered in by user
+			var num2 = prompt("Please enter in another number");
+			//parsing input from user into a float
+			num2 = parseFloat(num2);
+	
+			//variable to hold the sum of two numbers entered by user
+			var sum = num1 + num2;
+
+			//prints results to the screen
+			document.write("<p>The sum of " + num1 + " + " + num2 + " is " + sum + "!</p>");
+			
+		</script>
+	</body>
+</html>

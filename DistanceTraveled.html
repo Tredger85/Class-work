@@ -1,0 +1,31 @@
+<!--Andrew Franko-->
+<html>
+	<head>
+	<meta charset="UTF-8" />
+	<title>Distance Traveled</title>
+
+	</head>
+	<body>
+		<!--I considered writing a seperate function but find it easy enough to see everything here-->
+		<script>
+			//Input and parse the average speed, this is also printed first in the headline
+			var mph=parseInt(prompt("Enter Average MPH"));
+			//Input and parse for total time traveled
+			var time=parseInt(prompt("Enter Number of hours"));
+			//Print the headline with the entered information
+			document.write("<p>The car traveled with the speed of "+mph+" mph for "+time+" hours.</br></br>");
+			//Print the headers for the columns
+			document.write("Hour &nbsp &nbspDistance Traveled</br>");
+			//Print break line to match formatting
+			document.write("----------------------------</br>");
+			//Used a for loop because we know from the input how many iterations we need
+			//and test it against the number of hours/time
+			for(var i=1; i<=time; i++){
+				//Print out for each iteration, some formatting and the math for Distance(time*speed)
+				document.write(i+"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"+(mph*i)+"</br>");
+				}
+			//Close out the paragraph, closing tag here keeps everything together
+			document.write("</p>");
+		</script>
+	</body>
+</html> 

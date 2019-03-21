@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<script src="readform.js"></script>
+		<title>Forms and Functions</title>
+	</head>
+	<body>
+		<form name="form1" id="form1">
+			<input type="button" value="Pinch me"
+				onclick="window.alert('OUCH!')"/>
+		</form>
+		<hr />
+		<img src="internet_dog.jpg" width="300" height="300"
+			onclick="alert('You clicked the dog Pic!')"/>
+		<form name="form2" id="form2" method="post">
+			<label for="textBox">Type any text here:</label>
+			<input id="textBox" name="textBox" type="text" size="30" /><br/>
+			<input type="button" id="button1" value="Read Text" onclick="readform()"/>
+			<input type="reset" value="Clear Form" /><br/>
+			<label for="output">Out put box: </label>
+			<input id="output" name="output" type="text" size="30" readyonly="readyonly" /><br/>
+			<input "button" type="button" id="button2" value="Output" onclick="writeback()"/>
+		</form>
+	</body>
+</html>

@@ -1,21 +1,33 @@
-<!--DOCTYPE html-->
 <!--Andrew Franko-->
 <html>
+<head>
+<meta charset="UTF-8" />
+<title>Basic HTML Page</title>
+
+</head>
 <body>
-    <button id="btn" onclick="displayFood()">Show Food</button>
-    <script>
-        //Produces a number of lines that discribe what foods I like
-        function displayFood() {
-            document.getElementById("btn").style.backgroundColor = "green";
-			var text="";
-            var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
-            //Steps through the food array and then adds the new lines to the running string of text
-            for(let i = 0; i < food.length;i++) {
-				text = (text+ "I love " + food[i] + "<br/>");
-            }
-			document.getElementById("food").innerHTML = text.fontcolor("green");;
-        }
-    </script>
-	<p id="food"></p>
+<h3>Click Refresh (or Reload) to run the script again</h3>
+<br />
+<script>
+var numbers = new Array();
+var more;
+var i =0;
+var total=0;
+do{
+	numbers[i] = parseInt(prompt("Enter a number:"));
+	i++;
+	more=confirm("Want to enter another number?");
+} while (more);
+document.write("The numbers you entered are: <br/>");
+for(var j=0; j<i; j++){
+	total+=numbers[j];
+	document.write(numbers[j]+"<br/>");
+}
+document.write("Average is: "+total/numbers.length);
+</script>
 </body>
-</html>
+</html> 
+
+
+
+
